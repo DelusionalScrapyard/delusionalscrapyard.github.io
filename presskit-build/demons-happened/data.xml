@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<product>
+  <title>Demons Happened</title>
+  <release-date>25/07/2022</release-date>
+  <website>http://demonshappened.com/</website>
+
+  <!-- Link to request press copy: -->
+  <press-copy-request></press-copy-request>
+
+  <platforms>
+    <platform>
+      <name>Steam</name>
+      <link>https://store.steampowered.com/app/1992020/Demons_Happened/</link>
+    </platform>
+  </platforms>
+
+  <prices>
+    <price>
+      <currency>EUR</currency>
+      <value>7.39</value>
+    </price>
+	<price>
+      <currency>USD</currency>
+      <value>8.99</value>
+    </price>
+  </prices>
+
+  <description>Demons Happened is a challenging top down shooter with puzzle/platforming elements. Play as a ghost who looks as dead on the outside as he is on the inside, making demons your weapons on a journey to fix your tv.</description>
+
+  <!-- Choose between a single block: -->
+  <history>I started developing Demons Happened as a hobby project in 2016. For questionable reasons I decided to build my own engine, which resulted in a 6 years adventure that I'm extremely proud of... with a LOT of learnings. The idea stemmed when I first started learning about game development, finding funny how the only difference between the player object and the enemies is just in what controls them.</history>
+
+  <!-- Or multiple blocks: -->
+  <!--
+  <histories>
+    <history>
+      <header></header>
+      <text></text>
+    </history>
+  </histories>
+  -->
+
+  <features>
+    <feature>Control your enemies to overcome your obstacles</feature>
+	<feature>8 enemies with vastly different skills, from ricocheting bullets to time stopping</feature>
+	<feature>More than 100 bite-size levels, a mix of action, puzzle, and skillful dodging</feature>	
+	<feature>Collectibles for an extra challenge</feature>
+	<feature>Two endings</feature>
+	<feature>A protagonist dead inside AND outside</feature>
+  </features>
+
+  <trailers>
+    <trailer>
+      <name>Launch Trailer</name>
+
+      <!-- Pick one: -->
+      <youtube>
+        4UG7appLRI4
+      </youtube>
+    </trailer>
+  </trailers>
+
+  <!-- You can set your widgets here (optional): -->
+  <widgets>
+    <steam>
+      1992020
+    </steam>
+  </widgets>
+
+  <credits>
+    <credit>
+      <person>Alessandro Caselli</person>
+      <role>Solo dev</role>
+    </credit>
+  </credits>
+
+  <contacts>
+    <contact>
+      <name>Alessandro Caselli</name>
+
+      <mail>delusionalscrapyard@gmail.com</mail>
+    </contact>
+  </contacts>
+</product>

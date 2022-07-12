@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<company>
+  <title>Delusional Scrapyard</title>
+  <based-in>Amsterdam, Netherlands</based-in>
+  <founding-date></founding-date>
+  <website>https://delusionalscrapyard.github.io/</website>
+  <press-contact>
+    delusionalscrapyard@gmail.com
+  </press-contact>
+
+  <!-- Google analytics ID: -->
+  <analytics></analytics>
+
+  <phone></phone>
+  <address>
+    <line>
+      <!-- Street -->
+    </line>
+    <line>
+      Amsterdam
+    </line>
+    <line>
+      Netherlands
+    </line>
+  </address>
+
+  <socials>
+    <social>
+      <name>Twitter</name>
+      <link>
+        https://twitter.com/DelusionalScrap
+      </link>
+    </social>
+  </socials>
+
+  <description>Italian solo dev, based in Amsterdam, delusional enough to build his games on an in-house engine, still convinced that the world needs more games with a bird's-eye view.</description>
+
+  <!-- Choose between a single block: -->
+  <history>I started making games with Game Maker in middle school, jumping from project to project without a real focus, mostly for fun. I decided to build my own engine in C++ afterwards as a way to learn a proper programming language, improving, rebuilding, and testing random features in my spare time.
+  In 2016, I finally decided to commit to a single game and bring it to completion, developing Demons Happened as a hobby while working full time as a Software Engineer.</history>
+
+  <trailers>
+    <trailer>
+      <name>Demons Happened</name>
+
+      <!-- Pick one: -->
+      <youtube>
+        4UG7appLRI4
+      </youtube>
+    </trailer>
+  </trailers>
+
+  <!--awards>
+    <award>
+      <description></description>
+      <info></info>
+    </award>
+  </awards>
+
+  <quotes>
+    <quote>
+      <description></description>
+      <name></name>
+      <website></website>
+      <link></link>
+    </quote>
+  </quotes>
+
+  <additionals>
+    <additional>
+      <title></title>
+      <description></description>
+      <link></link>
+    </additional>
+  </additionals-->
+
+  <credits>
+    <credit>
+      <person>Alessandro Caselli</person>
+      <role>Solo dev</role>
+
+      <!-- Optional: -->
+      <website></website>
+    </credit>
+  </credits>
+
+  <contacts>
+    <contact>
+      <name>Alessandro Caselli</name>
+
+      <!-- Pick one: -->
+      <mail>delusionalscrapyard@gmail</mail>
+      <link></link>
+    </contact>
+  </contacts>
+</company>
