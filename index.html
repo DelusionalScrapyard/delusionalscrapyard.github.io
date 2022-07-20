@@ -1,20 +1,73 @@
 <!DOCTYPE html>
 <html>
 <style>
-body {
-  background-color: #090c21;
+
+header{
+  position: relative;
+  text-align: center;
+  color: white;
 }
+
+body {
+  background-color: #181C26;
+}
+
+.logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.background-animated {
+  height: 540px;
+  border-radius: 25px;
+  
+  background-image: url(background.png);
+  animation: infiniteScrollBg 15s linear infinite;
+  
+   box-shadow: inset 0 0 15px rgba(0, 0, 0, .7);
+}
+
+@keyframes infiniteScrollBg {
+  0% {
+    background-position: 0 0;
+  }
+  100%{
+    background-position: 0 200%;
+  }
+}
+
 
 .center {
   display: flex;
   justify-content: center;
 }
 
+.float-left {
+  float:left;
+}
+
+.float-right {
+  float:right;
+}
+
 .piccenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 40%;
+}
+
+.subtitle {
+	font-weight: 100;
+	font-size: 60px;
+	transform: rotate(3deg);
+	
+	text-shadow: -6px 6px rgba(0, 0,0, .8);
+}
+
+.box-shadowed {
+	box-shadow: 0 0 25px rgba(0, 0, 0, .9);
 }
 
 @font-face {
@@ -25,37 +78,96 @@ body {
 div {
   font-family: typewriter;
   color: lightgrey;
-  font-size: 32px;
-  white-space: pre-line;
+  font-size: 24px;
+}
+
+footer {
+	text-align: center;
+	font-family: typewriter;
+	color: lightgrey;
+	font-size: 16px;
+	white-space: pre-line;
+}
+
+a {
+  color: white;
+  padding: 1em 1.5em;
 }
 
 </style>
 <title> Delusional Scrapyard </title>
+
+<header>    
+	<div class="background-animated"></div>
+	<div class="logo"><img src="./logo.png"></div> 
+</header>
+
 <body>
-<!--h1>Delusional Scrapyard</h1-->
+	<div class="center subtitle">
+		<p>Control <s>your</s> everybody else's demons</p>
+	</div>
 
-<br>
-<image class=piccenter src="./logo.png"\>
-<tr\>
+	<br><br><br>
 
-<div class=center>
-	Website very much under construction
-</div>
-<br>
-<div class=center>
-	<a href="presskit/demons-happened/index.html">Demons Happened Presskit</a>
-</div>
-<br>
+	<div class="center">
+		<iframe class="float-left box-shadowed" width="600" height="337" src="https://www.youtube.com/embed/jMb-grYNyWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div style = "width:30%; margin-left:2%; margin-top: 0;"><h2>Fix your TV</h2>
+			Play as a ghost as dead on the inside as he looks on the outside, making demons your weapons on a journey to fix your tv. 
+		</div>
+	</div>
 
-<div class=center>
-	<iframe src="https://store.steampowered.com/widget/1992020/?t=A%20challenging%20top%20down%20shooter%20with%20puzzle%2Fplatforming%20elements.%20Play%20as%20a%20ghost%20who%20looks%20as%20dead%20on%20the%20outside%20as%20he%20is%20on%20the%20inside%2C%20making%20demons%20your%20weapons%20on%20a%20journey%20to%20fix%20your%20tv." frameborder="0" width="580" height="190"></iframe>
-</div>
+	<br><br><br>
+	
+	<div class="center">
+		<div style = "width:40%; height:300px; margin-right:2%; margin-top: 0;"><h2>Play with your enemies</h2>
+			Possess everybody else's demons to confront and use a variety of powers. Shoot from a safe distance with passive-aggressiveness, explode with repressed anger, shield yourself with overprotectiveness, stop time with your stress, and pet some very cute rats, nice and fluffy.
+		</div>
+		<img class="float-right box-shadowed" src="gif_store_clock_compressed.gif">
+	</div>
+	
+	<br><br><br>
+	
+	<div class="center">
+		<img class="float-left box-shadowed" src="gif_store_bomb_compressed.gif">
+		<div style = "width:40%; height:300px; margin-left:2%; margin-top: auto;"><h2>Features</h2><ul>
+		<li>Control your enemies to overcome any obstacle</li>
+		<li>8 enemies with vastly different skills, from ricocheting bullets to time stopping</li>
+		<li>More than 100 bite-size levels, a mix of action, puzzle, and skillful dodging</li>
+		<li>Collectibles for an extra challenge</li>
+		<li>Two endings</li>
+		<li>A protagonist dead inside AND outside</li>
+		</ul>
+		</div>
+	</div>
 
-<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<div class=center>
+		<h2>BUY NOW ON STEAM</h2>
+	</div>
+	<div class=center>
+		<iframe src="https://store.steampowered.com/widget/1992020/?t=Make%20the%20little%20ghost%20happy%2C%20get%20Demons%20Happened%20on%20Steam!" frameborder="0" width="646" height="190"></iframe>
+	</div>
 
-<div class=center>
-	<iframe width="720" height="406" src="https://www.youtube.com/embed/4UG7appLRI4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
-</div>
+	<br>
 
+	<div class=center>
+		<h2>SOCIAL</h2>
+	</div>
+	<div class=center style="height:1% margin-top:-6%">
+		<a href="https://twitter.com/DelusionalScrap" style="height:64px"><img src="twitter-logo.png" style="height:100%"></img></a>
+		<a href="https://www.youtube.com/channel/UCcIGOxaHkVwZgUEWhXUDKKA" style="height:64px"><img src="youtube-logo.png" style="height:100%"></img></a>
+		<a href="https://twitter.com/DelusionalScrap" style="height:64px"><img src="discord-logo.png" style="height:100%"></img></a>
+	</div>
 </body>
+
+<footer>
+Demons Happened is &copy;Copyright <script>document.write(new Date().getFullYear())</script> Delusional Scrapyard
+
+<a href="presskit/demons-happened/index.html">Get the Presskit</a> | <a href="mailto:delusionalscrapyard@gmail.com">Send an email</a>
+</footer>
 </html>
