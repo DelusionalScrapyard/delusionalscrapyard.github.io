@@ -1,173 +1,222 @@
 <!DOCTYPE html>
-<html>
-<style>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demons Happened</title>
+  <style>
+    body {
+      background-color: #181C26;
+      margin: 0;
+      padding: 0;
+      font-family: typewriter, sans-serif;
+      color: lightgrey;
+    }
 
-header{
-  position: relative;
-  text-align: center;
-  color: white;
-}
+    @font-face {
+      font-family: typewriter;
+      src: url(typewriter.ttf);
+    }
 
-body {
-  background-color: #181C26;
-}
+    header {
+      position: relative;
+      text-align: center;
+      height: 540px;
+      overflow: hidden;
+      color: white;
+    }
 
-.logo{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.background-animated {
-  height: 540px;
-  border-radius: 25px;
-  
-  background-image: url(background.png);
-  animation: infiniteScrollBg 15s linear infinite;
-  
-   box-shadow: inset 0 0 15px rgba(0, 0, 0, .7);
-}
+    .background-animated {
+      height: 100%;
+      width: 100%;
+      background-image: url(background.png);
+      background-size: cover;
+      background-repeat: repeat-y;
+      animation: infiniteScrollBg 15s linear infinite;
+      border-radius: 0 0 25px 25px;
+      box-shadow: inset 0 0 15px rgba(0, 0, 0, .7);
+    }
 
-@keyframes infiniteScrollBg {
-  0% {
-    background-position: 0 0;
-  }
-  100%{
-    background-position: 0 200%;
-  }
-}
+    @keyframes infiniteScrollBg {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 0 200%;
+      }
+    }
 
+    .logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
 
-.center {
-  display: flex;
-  justify-content: center;
-}
+    .subtitle {
+      font-weight: 100;
+      font-size: 60px;
+      transform: rotate(3deg);
+      text-shadow: -6px 6px rgba(0, 0, 0, .8);
+      text-align: center;
+      margin-top: 40px;
+    }
 
-.float-left {
-  float:left;
-}
+    .section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+      gap: 20px;
+    }
 
-.float-right {
-  float:right;
-}
+    .text-block {
+      max-width: 500px;
+    }
 
-.piccenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-}
+    .section img {
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 0 25px rgba(0, 0, 0, .9);
+    }
 
-.subtitle {
-	font-weight: 100;
-	font-size: 60px;
-	transform: rotate(3deg);
+    .responsive-video {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      aspect-ratio: 16 / 9;
+    }
+
+    .responsive-video iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      box-shadow: 0 0 25px rgba(0, 0, 0, .9);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+	  font-size: 36px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 16px;
+      padding: 40px 20px;
+      white-space: pre-line;
+    }
 	
-	text-shadow: -6px 6px rgba(0, 0,0, .8);
-}
+	p {
+	  font-size: 24px;
+	}
 
-.box-shadowed {
-	box-shadow: 0 0 25px rgba(0, 0, 0, .9);
-}
+    a {
+      color: white;
+      padding: 1em 1.5em;
+      text-decoration: none;
+    }
 
-@font-face {
-  font-family: typewriter;
-  src: url(typewriter.ttf);
-}
+    .social-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 60px;
+    }
 
-div {
-  font-family: typewriter;
-  color: lightgrey;
-  font-size: 24px;
-}
+    .social-links img {
+      height: 64px;
+    }
 
-footer {
-	text-align: center;
-	font-family: typewriter;
-	color: lightgrey;
-	font-size: 16px;
-	white-space: pre-line;
-}
+    .center-text {
+      text-align: center;
+    }
 
-a {
-  color: white;
-  padding: 1em 1.5em;
-}
+    @media (max-width: 768px) {
+      .column-on-mobile {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
 
-</style>
-<title> Demons Happened </title>
-
-<header>    
-	<div class="background-animated"></div>
-	<div class="logo"><img src="./logo.png"></div> 
+<header>
+  <div class="background-animated"></div>
+  <div class="logo"><img src="./logo.png" alt="Logo"></div>
 </header>
 
-<body>
-	<div class="center subtitle">
-		<p>Control <s>your</s> everybody else's demons</p>
-	</div>
+<main>
 
-	<br><br><br>
+  <div class="subtitle">
+    <p>Control <s>your</s> everybody else's demons</p>
+  </div>
 
-	<div class="center">
-		<iframe class="float-left box-shadowed" width="600" height="337" src="https://www.youtube.com/embed/jMb-grYNyWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		<div style = "width:30%; margin-left:2%; margin-top: 0;"><h2>Fix your TV</h2>
-			Play as a ghost as dead on the inside as he looks on the outside, making demons your weapons on a journey to fix your tv. 
-		</div>
-	</div>
+  <!-- YouTube Video Section -->
+  <div class="section">
+    <div class="responsive-video">
+      <iframe src="https://www.youtube.com/embed/jMb-grYNyWM" title="YouTube video player" allowfullscreen></iframe>
+    </div>
+    <div class="text-block">
+      <h2>Fix your TV</h2>
+      <p>Play as a ghost as dead on the inside as he looks on the outside, making demons your weapons on a journey to fix your tv.</p>
+    </div>
+  </div>
 
-	<br><br><br>
-	
-	<div class="center">
-		<div style = "width:40%; height:300px; margin-right:2%; margin-top: 0;"><h2>Play with your enemies</h2>
-			Possess everybody else's demons to confront and use a variety of powers. Shoot from a safe distance with passive-aggressiveness, explode with repressed anger, shield yourself with overprotectiveness, stop time with your stress, and pet some very cute rats, nice and fluffy.
-		</div>
-		<img class="float-right box-shadowed" src="gif_store_clock_compressed.gif">
-	</div>
-	
-	<br><br><br>
-	
-	<div class="center">
-		<img class="float-left box-shadowed" src="gif_store_bomb_compressed.gif">
-		<div style = "width:40%; height:300px; margin-left:2%; margin-top: auto;"><h2>Features</h2><ul>
-		<li>Control your enemies to overcome any obstacle</li>
-		<li>8 enemies with vastly different skills, from ricocheting bullets to time stopping</li>
-		<li>More than 100 bite-size levels, a mix of action, puzzle, and skillful dodging</li>
-		<li>Collectibles for an extra challenge</li>
-		<li>Two endings</li>
-		<li>A protagonist dead inside AND outside</li>
-		</ul>
-		</div>
-	</div>
+  <!-- Play with your enemies Section (GIF right on desktop, above on mobile) -->
+  <div class="section column-on-mobile">
+    <div class="text-block">
+      <h2>Play with your enemies</h2>
+      <p>Possess everybody else's demons to confront and use a variety of powers. Shoot from a safe distance with passive-aggressiveness, explode with repressed anger, shield yourself with overprotectiveness, stop time with your stress, and pet some very cute rats, nice and fluffy.</p>
+    </div>
+    <img src="gif_store_clock_compressed.gif" alt="Gameplay Clock">
+  </div>
 
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	
-	<div class=center>
-		<h2>BUY NOW ON STEAM</h2>
-	</div>
-	<div class=center>
-		<iframe src="https://store.steampowered.com/widget/1992020/?t=Make%20the%20little%20ghost%20happy%2C%20get%20Demons%20Happened%20on%20Steam!" frameborder="0" width="646" height="190"></iframe>
-	</div>
+  <!-- Features Section -->
+  <div class="section">
+    <img src="gif_store_bomb_compressed.gif" alt="Gameplay Bomb">
+    <div class="text-block">
+      <h2>Features</h2>
+      <ul>
+        <li>Control your enemies to overcome any obstacle</li>
+        <li>8 enemies with vastly different skills, from ricocheting bullets to time stopping</li>
+        <li>More than 100 bite-size levels, a mix of action, puzzle, and skillful dodging</li>
+        <li>Collectibles for an extra challenge</li>
+        <li>Two endings</li>
+        <li>A protagonist dead inside AND outside</li>
+      </ul>
+    </div>
+  </div>
 
-	<br>
+  <!-- Steam -->
+  <div class="center-text">
+    <h2>BUY NOW ON STEAM</h2>
+    <iframe src="https://store.steampowered.com/widget/1992020/?t=Make%20the%20little%20ghost%20happy%2C%20get%20Demons%20Happened%20on%20Steam!" frameborder="0" width="646" height="190"></iframe>
+  </div>
 
-	<div class=center>
-		<h2>SOCIAL</h2>
-	</div>
-	<div class=center style="height:1% margin-top:-6%">
-		<a href="https://twitter.com/DelusionalScrap" style="height:64px"><img src="twitter-logo.png" style="height:100%"></img></a>
-		<a href="https://www.youtube.com/channel/UCcIGOxaHkVwZgUEWhXUDKKA" style="height:64px"><img src="youtube-logo.png" style="height:100%"></img></a>
-		<a href="https://twitter.com/DelusionalScrap" style="height:64px"><img src="discord-logo.png" style="height:100%"></img></a>
-	</div>
-</body>
+  <!-- Social -->
+  <div class="center-text">
+    <h2>SOCIAL</h2>
+  </div>
+
+  <div class="social-links">
+    <a href="https://twitter.com/DelusionalScrap"><img src="twitter-logo.png" alt="Twitter"></a>
+    <a href="https://www.youtube.com/channel/UCcIGOxaHkVwZgUEWhXUDKKA"><img src="youtube-logo.png" alt="YouTube"></a>
+    <a href="https://discord.com/invite/your-discord-link"><img src="discord-logo.png" alt="Discord"></a>
+  </div>
+
+</main>
 
 <footer>
 Demons Happened is &copy;Copyright <script>document.write(new Date().getFullYear())</script> Delusional Scrapyard
 
 <a href="presskit/demons-happened/index.html">Get the Presskit</a> | <a href="mailto:delusionalscrapyard@gmail.com">Send an email</a>
 </footer>
+
+</body>
 </html>
